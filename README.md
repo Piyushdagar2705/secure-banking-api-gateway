@@ -90,5 +90,5 @@ cd frontend        && npm test       # Jest + React Testing Library
 
 - **Token & Key Security:** Migrate token storage from `localStorage` to `HttpOnly` cookies, implement refresh token rotation/revocation, and switch from a shared HS256 secret to asymmetric keys (JWKS) with a dedicated secrets manager.
 - **Database & Ledger:** Replace Hibernate `ddl-auto: update` with versioned Flyway migrations and introduce a formal double-entry ledger with audit logging.
-- **Resilience & Observability:** Add gateway-level rate limiting, graceful fallback handling for Redis outages, OpenAPI/Swagger documentation, and parallel concurrency load tests.
+- ***Resilience & Observability:*** Add gateway-level rate limiting, graceful fallback handling for Redis outages, OpenAPI/Swagger documentation, and parallel concurrency load tests.
 - **Cloud Deployment:** Containerized deployment pipeline targeting AWS (ECS/EC2).
